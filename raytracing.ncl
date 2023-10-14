@@ -15,14 +15,14 @@ begin
 ; ug vg: group velocity 
 ; Information
 ; author: Cui xiangyang 
-
+;---------------------------------------------------------------------------
 ;some constants
 a     = 6371000.              ;Earth's radius (unit:m)
 pi    = atan(1.0)*4.          ;pi
 omega = 2.*pi/(24.*60.*60.)   ;Earth's angular velociy (unit: s-1)               
 itime = iday*4.*6.*60.*60.                            
 dir   = -1.                   ;direction: 1. is poleward; -1. is equatward.
-
+;---------------------------------------------------------------------------
 lat      = um&lat
 nlat     = dimsizes(lat)
 phirad   = lat*pi/180.   ;(90 - -90)
@@ -32,7 +32,7 @@ YY   = phi
 do i = 0, nlat-1
     YY(i,:)   = a*log((1.+sin(phi(i,:)))/cos(phi(i,:))) 
 end do
-
+;---------------------------------------------------------------------------
 ; Mercator coordinates         
 umz  = um/cos(phi)                      ; uwind in Mercator.
 umz(0,:) = 0.
@@ -62,7 +62,7 @@ beta_m := beta_m(3:nlat-4,:)
 umz    := dim_avg_n_Wrap(umz,1) 
 beta_m := dim_avg_n_Wrap(beta_m,1)
 YY     := YY(:,1)
-
+;---------------------------------------------------------------------------
 ;caculate cgx.
 function UG(um1,betam,ku,lu,ks)
 begin
@@ -83,7 +83,7 @@ begin
 z = z1 + delta*wnd
 return(z)
 end
-
+;---------------------------------------------------------------------------
 ;Main code.
 icount    = floattointeger(itime/dt)
 latlon    = new((/2,icount+1/),float)
@@ -98,7 +98,7 @@ tl      = 1.
 YYu     = YY(1:nlat-2)
 YYb     = YY(3:nlat-4)
 umz     := umz(1:nlat-2)
-
+;---------------------------------------------------------------------------
 ftsetp("sig",0.0)
 do i = 0 , icount-1               
     ;K1 term
@@ -177,21 +177,21 @@ do i = 0 , icount-1
     y0  = yt
     delete([/xt,yt/])
 end do
-
+;---------------------------------------------------------------------------
 ;create .csv file to retain the values of latitude and longitude.
-csv_filename = "/home/yinqc/script/Ray.csv"
-dq  = str_get_dq()
+;csv_filename = "/home/yinqc/script/Ray.csv"
+;dq  = str_get_dq()
 
-fields = (/"lat","lon"/)
-fields = dq + fields + dq	
-header = [/str_join(fields,",")/]
+;fields = (/"lat","lon"/)
+;fields = dq + fields + dq	
+;header = [/str_join(fields,",")/]
 
-alist  = [/latlon(0,:),latlon(1,:)/]
-format = "%2.4f,%2.4f"
-system ("rm -f" +" "+ csv_filename)
+;alist  = [/latlon(0,:),latlon(1,:)/]
+;format = "%2.4f,%2.4f"
+;system ("rm -f" +" "+ csv_filename)
 
-write_table(csv_filename, "w", header, "%s")
-write_table(csv_filename, "a", alist, format)
+;write_table(csv_filename, "w", header, "%s")
+;write_table(csv_filename, "a", alist, format)
 
 return(latlon)
 end
