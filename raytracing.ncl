@@ -1,5 +1,4 @@
-function raytracing(um,x0,y0,dt,iday,K,cx)
-begin 
+;---------------------------------------------------------------------------
 ; This scrpit intends to caculate the Rossby wave ray tracing.
 ; Parameters this script needs are listed as follow.
 ; um: background zonal wind (nlat,nlon)
@@ -15,6 +14,12 @@ begin
 ; ug vg: group velocity 
 ; Information
 ; author: Cui xiangyang 
+;---------------------------------------------------------------------------
+
+function raytracing(um,x0,y0,dt,iday,K,cx)
+local a,pi,omega,itime,dir,lat,nlat,phirad,phi,YY
+local umz,b,d,c,dfdy,tm2,d2udy2,beta_m,k,l,y
+begin 
 ;---------------------------------------------------------------------------
 ;some constants
 a     = 6371000.              ;Earth's radius (unit:m)
@@ -34,7 +39,7 @@ do i = 0, nlat-1
 end do
 ;---------------------------------------------------------------------------
 ; Mercator coordinates         
-umz  = um/cos(phi)                      ; uwind in Mercator.
+umz  = um/cos(phi)                         ; uwind in Mercator.
 umz(0,:) = 0.
 umz(nlat-1,:) = 0.
 copy_VarCoords(um, umz)
@@ -65,6 +70,7 @@ YY     := YY(:,1)
 ;---------------------------------------------------------------------------
 ;caculate cgx.
 function UG(um1,betam,ku,lu,ks)
+local um1,betam,ku,lu,ks
 begin
 ug = (um1 + betam*(ku^2 - lu^2)/(ks^2))*180./(a*pi)
 return(ug)
@@ -72,6 +78,7 @@ end
 
 ;caculate cgy.
 function VG(um1,betam,kv,lv,ks,tc)
+local um1,betam,kv,lv,ks,tc
 begin
 vg = (2.*betam*kv*lv/(ks^2))*tc*180./(a*pi)
 return(vg)
@@ -79,6 +86,7 @@ end
 
 ;caculate x and y.
 function cacls(z1,wnd,delta)
+local z1,wnd,delta
 begin
 z = z1 + delta*wnd
 return(z)
@@ -192,6 +200,6 @@ end do
 
 ;write_table(csv_filename, "w", header, "%s")
 ;write_table(csv_filename, "a", alist, format)
-
 return(latlon)
+
 end
