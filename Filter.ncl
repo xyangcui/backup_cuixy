@@ -16,7 +16,7 @@ begin
     npts = 201
     nwa  = 100
     nwb  = 20
-    time    = x@time
+    time    = x&time
     ymdhms  = cd_calendar(time, 0)
     iyear   = floattoint( ymdhms(:,0) )
     imon    = floattoint( ymdhms(:,1) )   
