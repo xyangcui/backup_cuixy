@@ -13,9 +13,6 @@ function iso_filter(x,npts,nwa,nwb)
 local time,ymdhms,iyear,imon,iday,ddd,yyyyddd,wts,xClmDay,xClmDay_sm
 local xAnom,x1,npts,nwa,nwb,x
 begin
-    npts = 201
-    nwa  = 100
-    nwb  = 20
     time    = x&time
     ymdhms  = cd_calendar(time, 0)
     iyear   = floattoint( ymdhms(:,0) )
