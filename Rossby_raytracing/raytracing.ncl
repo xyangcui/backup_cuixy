@@ -17,8 +17,8 @@
 ;---------------------------------------------------------------------------
 
 function raytracing(um,x0,y0,dt,iday,K,cx)
-local a,pi,omega,itime,dir,lat,nlat,phirad,phi,YY
-local umz,b,d,c,dfdy,tm2,d2udy2,beta_m,k,l,y
+local a,pi,omega,itime,dir,lat,nlat,phirad,phi,YY,\
+umz,b,d,c,dfdy,tm2,d2udy2,beta_m,k,l,y
 begin 
 ;---------------------------------------------------------------------------
 ;some constants
