@@ -20,3 +20,5 @@ calc_running_window_clim_anom: Using 30-yr running window to calculate anomalies
 error-bar: plot error-bar.
 
 plot_scatter_polygon: plot scttert_polygon. Like severals parts with different colors.
+
+calc_sf_vp: calculate streamfunction or velocitypotential by Libman method.
