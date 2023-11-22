@@ -1,7 +1,4 @@
 # Some useful functions or procedures.
-These are my NCL scripts.<br>
-NCL: NCAR Command Language
-website: https://www.ncl.ucar.edu/
 
 <font size=100>Illustration</font>
 
