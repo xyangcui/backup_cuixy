@@ -1,6 +1,8 @@
-import numpy  as np
-import xarray as xr
 import os
+
+import numpy as np
+import xarray as xr
+import netCDF4 as nc
 """
 This script is used to calculate stream function and velocity potential
 by Libman method.
@@ -28,29 +30,11 @@ velocity potential (chi)
 time: time series
 lat: latitude series
 lon: longitude series
+
 """
 
 def Libman(xl, yl, dxl, dyl, fil):
 
-"""
-this function use Libman method to solve 2-D.
-Procedures:
-Rn,i,j = (yn,i,j+1 - yn,i,j-1)/(deltax^2) + 
-(yn,i+1,j - yn,i-1,j)/(deltax^2) -
-2*(1/deltax^2 + 1/deltay^2)*yn,i,j + 
-Xi,j
-
-yn+1,i,j = yn,i,j + Rn,i,j / ( 2*(1/deltax^2 + 1/deltay^2) )
-
-variables:
-fil: critia
-xl: vor or con
-yl: inintialized sf or vp.
-dxl: deltax
-dyl: deltay
-delt: to judge if procedure can stop.
-R: residual.
-"""
     delt = 0.0
     while delt > fil :
         delt = 0.0
@@ -77,15 +61,15 @@ pi = np.pi                  # pi
 om = 2.0*pi/(24.0*60.0*60.)    # earth's angular momentum
 fi = 100
 
-fdirx   = os.getenv('dirx')        # file dir of vor or con.
-fdiry   = os.getenv('diry')        # file dir of gph.
-outdir  = os.getenv('outdir')      # file for output
+dirx    = 'D:\test\vor.nc'        # file dir of vor or con.
+diry    = os.getenv('diry')        # file dir of gph.
+outdir  = 'D:\test\sf.nc'      # file for output
 xvar    = os.getenv('xvar')        # variable name for x.
 yvar    = os.getenv('yvar')        # variable name for y.
 ovar    = os.getenv('ovar')        # variable name for output.
 ### read in variables.
-xf = xr.open_dataset(dirx)
-yf = xr.open_dataset(diry)
+xf = nc.Dataset(r'dirx', 'r')
+yf = nc.Dataset(r'diry','r')
 
 x   = xf[xvar]
 gph = yf[yvar]
@@ -94,8 +78,8 @@ x   = np.array(x)
 gph = np.array(gph)
 
 time1 = xf['time']
-lon1  = xf['lon']
-lat1  = xf['lat']
+lon1  = xf['longitude']
+lat1  = xf['latitude']
 
 time  = np.array(time1)
 lon   = np.array(lon1)
@@ -109,17 +93,15 @@ f   = 2.0 * om * np.sin(rad*lat)     # coriori parameter.
 deltax = np.abs(lon[0]-lon[1])
 deltay = np.abs(lat[0]-lat[1])
 
-dx = np.zeros(x[0,:,:], dtype = float)
-dy = np.zeros(x[0,:,:], dtype = float)
-
+dx = x[0,:,:]
+dy = dx
+y  = x
+vout = x
 dy = a * rad * deltay 
-for i in range[lat.shape[0]]
+for i in range(lat.shape[0]):
     dx[i,:] = a * rad * deltax * np.cos(rad * lat[i]) 
 
-
-y = np.zeros(x, dtype = float)
-
-if ovar == 'sf':
+if ovar == 'phi':
     
     i = 0
     for j in range(lon.shape[0]):
@@ -137,11 +119,26 @@ if ovar == 'sf':
 
 
 ### formal calc by external function.
-vout = np.zeros(x, dtype = float)
+
 for k in range(time.shape[0]):
     vout[k,:,:] = Libman(x[k,:,:], y[k,:,:], dx, dy, fi)
 
-ds = xr.Dataset({ovar: (('time','lat','lon'), vout)} coords={'time': time1,'lat': lat1,'lon': lon1})
+f_w = nc.Dataset(outdir,'w',format = 'NETCDF4')
 
-ds.to_netcdf(outdir)
+f_w.createDimension('time',time.shape[0])  
+f_w.createDimension('lat',lat.shape[0])   
+f_w.createDimension('lon',lon.shape[0])  
+
+f_w.createVariable('time',int,('time'))  
+f_w.createVariable('lat',np.float32,('lat'))  
+f_w.createVariable('lon',np.float32,('lon'))
+
+f_w.variables['time'][:] = time 
+f_w.variables['lat'][:]  = lat  
+f_w.variables['lon'][:]  = lon
+
+f_w.createVariable( ovar, np.float32, ('time','lat','lon'))
+f_w.variables[ovar][:] = vout 
+
+f_w.close()
 
