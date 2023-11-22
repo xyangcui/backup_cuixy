@@ -1,7 +1,5 @@
 # Some useful functions or procedures.
 
-<font size=100>Illustration</font>
-
 Rossby_raytracing: These scripts are used to calculate raytrace based on zonal symmetric wind. like Karoly et al. (1981)
 
 calc_percentile: These scripts are used to calculate 1D and 2D extreme percentile.
