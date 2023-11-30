@@ -12,8 +12,7 @@
 
 undef("create_nc_file")
 
-procedure create_nc_file(x:float,TIME[:]:integer,LAT[:]:\
-                         float,LON[:]:float,DIR:string,VAR:string)
+procedure create_nc_file(x:float,TIME,LAT,LON,DIR:string,VAR:string)
 local x,LON,LAT,TIME,DIR,VAR,fout
 begin
     system("/bin/rm -f "+DIR)
@@ -33,7 +32,7 @@ begin
   filevarattdef(fout,"time" ,TIME)                    
   filevarattdef(fout,"lat"  ,LAT)                   
   filevarattdef(fout,"lon"  ,LON)                     
-  filevarattdef(fout,var   ,x)   
+  filevarattdef(fout,VAR   ,x)   
 
   setfileoption(fout,"DefineMode",False)
 
