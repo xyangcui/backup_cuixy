@@ -1,0 +1,37 @@
+nohup: ignoring input
+(0)	complete data selling Sun Dec 17 15:27:10 CST 2023
+(0)	sort MJO done. Sun Dec 17 15:27:11 CST 2023
+(0)	NDJFM done. Sun Dec 17 15:27:13 CST 2023
+(0)	ind_time done. Sun Dec 17 15:27:13 CST 2023
+(0)	random calc phi begin. Sun Dec 17 15:27:18 CST 2023
+fatal:Subscript out of range, error in subscript #0
+fatal:An error occurred reading ind_timet
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 64 in file /home/sunming/data5/cuixy/script/ncl_func/monte_caro.ncl
+
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 138 in file calc_monte_value.ncl
+
+(0)	random calc phi done. Sun Dec 17 16:28:23 CST 2023
+(0)	random calc u begin. Sun Dec 17 16:28:28 CST 2023
+fatal:Subscript out of range, error in subscript #0
+fatal:An error occurred reading ind_timet
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 64 in file /home/sunming/data5/cuixy/script/ncl_func/monte_caro.ncl
+
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 151 in file calc_monte_value.ncl
+
+ncendef: ncid 196608: NetCDF: One or more variable sizes violate format constraints
+(0)	random calc done. Sun Dec 17 18:17:36 CST 2023
+fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lat) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/phiu_sig_phase15.nc)
+warning:FileWriteVarVar: Could not write coordinate variable (lat) to file (phiu_sig_phase15), continuing anyway
+ncredef: ncid 196608: NetCDF: Operation not allowed in define mode
+ncendef: ncid 196608: NetCDF: One or more variable sizes violate format constraints
+fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lon) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/phiu_sig_phase15.nc)
+warning:FileWriteVarVar: Could not write coordinate variable (lon) to file (phiu_sig_phase15), continuing anyway
+warning:["Execute.c":8637]:Execute: Error occurred at or near line 165 in file calc_monte_value.ncl
+
+ncredef: ncid 196608: NetCDF: Operation not allowed in define mode
+ncendef: ncid 196608: NetCDF: One or more variable sizes violate format constraints
+fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (m_valueu) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/phiu_sig_phase15.nc)
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 166 in file calc_monte_value.ncl
+
+input in flex scanner failed
+(0)	sort done. Sun Dec 17 18:21:24 CST 2023
