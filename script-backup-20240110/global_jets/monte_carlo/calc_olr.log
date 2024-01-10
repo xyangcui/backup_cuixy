@@ -1,0 +1,18 @@
+nohup: ignoring input
+ncendef: ncid 131072: NetCDF: One or more variable sizes violate format constraints
+(0)	complete data selling Fri Jan  5 10:19:38 CST 2024
+(0)	sort MJO done. Fri Jan  5 10:19:40 CST 2024
+(0)	NDJFM done. Fri Jan  5 10:19:40 CST 2024
+(0)	ind_time done. Fri Jan  5 10:19:41 CST 2024
+(0)	random calc u begin. Fri Jan  5 10:19:46 CST 2024
+(0)	random calc done. Fri Jan  5 11:42:20 CST 2024
+fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lat) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/olr_sig_phase15.nc)
+warning:FileWriteVarVar: Could not write coordinate variable (lat) to file (olr_sig_phase15), continuing anyway
+ncredef: ncid 131072: NetCDF: Operation not allowed in define mode
+ncendef: ncid 131072: NetCDF: One or more variable sizes violate format constraints
+fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lon) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/olr_sig_phase15.nc)
+warning:FileWriteVarVar: Could not write coordinate variable (lon) to file (olr_sig_phase15), continuing anyway
+warning:["Execute.c":8637]:Execute: Error occurred at or near line 142 in file calc_monte_value_olr.ncl
+
+input in flex scanner failed
+(0)	sort done. Fri Jan  5 11:43:59 CST 2024
