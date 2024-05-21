@@ -1,0 +1,29 @@
+calc meri monte value begin. Sun May 19 11:48:21 CST 2024
+(0)	sort MJO done. Sun May 19 11:48:25 CST 2024
+(0)	NDJFM done. Sun May 19 11:48:25 CST 2024
+(0)	ind_time done. Sun May 19 11:48:25 CST 2024
+(0)	random calc begin. Sun May 19 11:48:25 CST 2024
+(0)	random calc done. Sun May 19 11:56:59 CST 2024
+warning:VarVarWrite: rhs has no dimension name or coordinate variable, deleting name of lhs dimension number (3) and destroying coordinate var,  use "(/../)" if this is not desired outcome
+warning:VarVarWrite: rhs has no dimension name or coordinate variable, deleting name of lhs dimension number (4) and destroying coordinate var,  use "(/../)" if this is not desired outcome
+warning:["Execute.c":8637]:Execute: Error occurred at or near line 161 in file /home/sunming/data5/cuixy/global_jets/script/monte_carlo/calc_monte_value_meri_Fig7.ncl
+
+fatal:Subscript out of range, error in subscript #2
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 166 in file /home/sunming/data5/cuixy/global_jets/script/monte_carlo/calc_monte_value_meri_Fig7.ncl
+
+input in flex scanner failed
+(0)	store done. Sun May 19 11:57:00 CST 2024
+calc meri monte value done. Sun May 19 11:57:00 CST 2024
+calc olr monte value begin. Sun May 19 11:57:00 CST 2024
+(0)	sort MJO done. Sun May 19 11:57:02 CST 2024
+(0)	NDJFM done. Sun May 19 11:57:02 CST 2024
+(0)	ind_time done. Sun May 19 11:57:02 CST 2024
+(0)	random calc begin. Sun May 19 11:57:02 CST 2024
+(0)	random calc done. Sun May 19 12:08:14 CST 2024
+warning:VarVarWrite: rhs has no dimension name or coordinate variable, deleting name of lhs dimension number (2) and destroying coordinate var,  use "(/../)" if this is not desired outcome
+warning:VarVarWrite: rhs has no dimension name or coordinate variable, deleting name of lhs dimension number (3) and destroying coordinate var,  use "(/../)" if this is not desired outcome
+warning:["Execute.c":8637]:Execute: Error occurred at or near line 152 in file /home/sunming/data5/cuixy/global_jets/script/monte_carlo/calc_monte_value_olr_Fig7.ncl
+
+input in flex scanner failed
+(0)	store done. Sun May 19 12:08:16 CST 2024
+calc olr monte value done. Sun May 19 12:08:17 CST 2024
