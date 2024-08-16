@@ -1,0 +1,36 @@
+(0)	complete data selling Thu Aug  1 09:36:03 CST 2024
+(0)	DJF done. Thu Aug  1 09:36:03 CST 2024
+(0)	random calc begin. Thu Aug  1 09:36:03 CST 2024
+(0)	random calc done. Thu Aug  1 09:47:16 CST 2024
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 123 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 124 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 125 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 126 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 130 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 131 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 132 in file calc_monte_value_st_events.ncl
+
+fatal:Undefined identifier: (m_value_2) is undefined, can't continue
+fatal:["Execute.c":8637]:Execute: Error occurred at or near line 133 in file calc_monte_value_st_events.ncl
+
+input in flex scanner failed
+(0)	store done. Thu Aug  1 09:47:17 CST 2024
+input in flex scanner failed
+(0)	complete data selling Thu Aug  1 21:22:30 CST 2024
+(0)	DJF done. Thu Aug  1 21:22:31 CST 2024
+(0)	random calc begin. Thu Aug  1 21:22:31 CST 2024
+(0)	random calc done. Thu Aug  1 21:33:22 CST 2024
+(0)	store done. Thu Aug  1 21:33:24 CST 2024
