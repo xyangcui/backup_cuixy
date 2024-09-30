@@ -1,19 +1,0 @@
-nohup: ignoring input
-sh: 5.nc: command not found
-ncendef: ncid 131072: NetCDF: One or more variable sizes violate format constraints
-(0)	complete data selling Tue Dec 19 10:04:38 CST 2023
-(0)	sort MJO done. Tue Dec 19 10:04:40 CST 2023
-(0)	NDJFM done. Tue Dec 19 10:04:40 CST 2023
-(0)	ind_time done. Tue Dec 19 10:04:40 CST 2023
-(0)	random calc phi begin. Tue Dec 19 10:04:44 CST 2023
-(0)	random calc phi done. Tue Dec 19 11:19:05 CST 2023
-fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lat) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/tvert_sig_phase1&5.nc)
-warning:FileWriteVarVar: Could not write coordinate variable (lat) to file (tvert_sig_phase1&5), continuing anyway
-ncredef: ncid 131072: NetCDF: Operation not allowed in define mode
-ncendef: ncid 131072: NetCDF: One or more variable sizes violate format constraints
-fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lon) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/tvert_sig_phase1&5.nc)
-warning:FileWriteVarVar: Could not write coordinate variable (lon) to file (tvert_sig_phase1&5), continuing anyway
-warning:["Execute.c":8637]:Execute: Error occurred at or near line 145 in file calc_monte_value_t.ncl
-
-input in flex scanner failed
-(0)	sort done. Tue Dec 19 11:20:31 CST 2023

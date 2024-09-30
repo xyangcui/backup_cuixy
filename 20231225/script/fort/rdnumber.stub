@@ -1,4 +1,0 @@
-C NCLFORTSTART
-      subroutine rdnum(ntime,n,rint)
-	  integer ntime,n,rint(n)
-C NCLEND

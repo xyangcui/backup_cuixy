@@ -1,23 +1,0 @@
-nohup: ignoring input
-ncendef: ncid 196608: NetCDF: One or more variable sizes violate format constraints
- Copyright (C) 1995-2019 - All Rights Reserved
- University Corporation for Atmospheric Research
- NCAR Command Language Version 6.6.2
- The use of this software is governed by a License Agreement.
- See http://www.ncl.ucar.edu/ for more details.
-(0)	complete data selling Sun Dec 17 20:20:34 CST 2023
-(0)	sort MJO done. Sun Dec 17 20:20:36 CST 2023
-(0)	NDJFM done. Sun Dec 17 20:20:37 CST 2023
-(0)	ind_time done. Sun Dec 17 20:20:37 CST 2023
-(0)	random calc u begin. Sun Dec 17 20:20:42 CST 2023
-(0)	random calc done. Sun Dec 17 22:35:46 CST 2023
-fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lat) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/phi_sig_phase15.nc)
-warning:FileWriteVarVar: Could not write coordinate variable (lat) to file (phi_sig_phase15), continuing anyway
-ncredef: ncid 196608: NetCDF: Operation not allowed in define mode
-ncendef: ncid 196608: NetCDF: One or more variable sizes violate format constraints
-fatal:NetCDF: Operation not allowed in define mode: error attempting to write variable (lon) to file (/home/sunming/data5/cuixy/global_jets/data/monte_carlo/phi_sig_phase15.nc)
-warning:FileWriteVarVar: Could not write coordinate variable (lon) to file (phi_sig_phase15), continuing anyway
-warning:["Execute.c":8637]:Execute: Error occurred at or near line 151 in file calc_monte_value_phi.ncl
-
-input in flex scanner failed
-(0)	sort done. Sun Dec 17 22:38:15 CST 2023
