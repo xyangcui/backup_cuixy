@@ -1,0 +1,22 @@
+input in flex scanner failed
+
+Variable: z
+Type: float
+Total Size: 87687600 bytes
+            21921900 values
+Number of Dimensions: 3
+Dimensions and sizes:	[time | 16060] x [lat | 21] x [lon | 65]
+Coordinates: 
+            time: [692505..1078185]
+            lat: [  10..  60]
+            lon: [  80.. 240]
+Number Of Attributes: 4
+  terms :	( 0, 1, 2, 3, 4 )
+  var :	0: general, 1: divi&vorm 2: i_mvor adv 3: divm&vori 4: m_ivor adv
+  unit :	s^(-2)
+  _FillValue :	9.96921e+36
+(0)	complete OMI selling Tue Oct 15 10:40:15 CST 2024
+(0)	random calc begin. Tue Oct 15 10:40:15 CST 2024
+(0)	random calc done. Tue Oct 15 10:58:32 CST 2024
+(0)	store begin. Tue Oct 15 10:58:32 CST 2024
+(0)	store done. Tue Oct 15 10:58:33 CST 2024
