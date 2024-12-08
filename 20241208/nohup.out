@@ -1,0 +1,64 @@
+(0)	complete OMI selling Mon Dec  2 10:23:15 CST 2024
+(0)	IOnP begin. Mon Dec  2 10:23:15 CST 2024
+fatal:syntax error: function calc_pro expects 8 arguments, got 7
+fatal:error at line 155 in file calc_pattern_consistency_omi_alldays.ncl
+
+(0)	IOnP done. Mon Dec  2 10:23:16 CST 2024
+(0)	IOiP begin. Mon Dec  2 10:23:16 CST 2024
+fatal:syntax error: function calc_pro expects 8 arguments, got 7
+fatal:error at line 159 in file calc_pattern_consistency_omi_alldays.ncl
+
+(0)	IOiP done. Mon Dec  2 10:23:16 CST 2024
+(0)	IOfP begin. Mon Dec  2 10:23:16 CST 2024
+fatal:syntax error: function calc_pro expects 8 arguments, got 7
+fatal:error at line 163 in file calc_pattern_consistency_omi_alldays.ncl
+
+(0)	IOfP done. Mon Dec  2 10:23:16 CST 2024
+(0)	IOsP begin. Mon Dec  2 10:23:16 CST 2024
+fatal:syntax error: function calc_pro expects 8 arguments, got 7
+fatal:error at line 167 in file calc_pattern_consistency_omi_alldays.ncl
+
+input in flex scanner failed
+(0)	IOsP done. Mon Dec  2 10:23:16 CST 2024
+(0)	store begin. Mon Dec  2 10:23:16 CST 2024
+(0)	store done. Mon Dec  2 10:23:16 CST 2024
+input in flex scanner failed
+(0)	complete OMI selling Mon Dec  2 10:30:54 CST 2024
+(0)	IOfP begin. Mon Dec  2 10:30:54 CST 2024
+(0)	phase 1 begin.
+(0)	phase 1 done.
+(0)	phase 2 begin.
+(0)	phase 2 done.
+(0)	phase 3 begin.
+(0)	phase 3 done.
+(0)	phase 4 begin.
+(0)	phase 4 done.
+(0)	phase 5 begin.
+(0)	phase 5 done.
+(0)	phase 6 begin.
+(0)	phase 6 done.
+(0)	phase 7 begin.
+(0)	phase 7 done.
+(0)	phase 8 begin.
+(0)	phase 8 done.
+(0)	IOfP done. Mon Dec  2 10:40:42 CST 2024
+(0)	IOsP begin. Mon Dec  2 10:40:42 CST 2024
+(0)	phase 1 begin.
+(0)	phase 1 done.
+(0)	phase 2 begin.
+(0)	phase 2 done.
+(0)	phase 3 begin.
+(0)	phase 3 done.
+(0)	phase 4 begin.
+(0)	phase 4 done.
+(0)	phase 5 begin.
+(0)	phase 5 done.
+(0)	phase 6 begin.
+(0)	phase 6 done.
+(0)	phase 7 begin.
+(0)	phase 7 done.
+(0)	phase 8 begin.
+(0)	phase 8 done.
+(0)	IOsP done. Mon Dec  2 10:45:13 CST 2024
+(0)	store begin. Mon Dec  2 10:45:13 CST 2024
+(0)	store done. Mon Dec  2 10:45:13 CST 2024
