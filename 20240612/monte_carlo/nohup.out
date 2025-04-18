@@ -1,12 +1,0 @@
-(0)	complete data selling Thu May 30 11:05:08 CST 2024
-(0)	sort MJO done. Thu May 30 11:05:09 CST 2024
-(0)	NDJFM done. Thu May 30 11:05:10 CST 2024
-(0)	ind_time done. Thu May 30 11:05:10 CST 2024
-(0)	random calc begin. Thu May 30 11:05:10 CST 2024
-(0)	random calc done. Thu May 30 12:48:14 CST 2024
-warning:VarVarWrite: rhs has no dimension name or coordinate variable, deleting name of lhs dimension number (3) and destroying coordinate var,  use "(/../)" if this is not desired outcome
-warning:VarVarWrite: rhs has no dimension name or coordinate variable, deleting name of lhs dimension number (4) and destroying coordinate var,  use "(/../)" if this is not desired outcome
-warning:["Execute.c":8637]:Execute: Error occurred at or near line 209 in file calc_monte_value_Fig8.ncl
-
-input in flex scanner failed
-(0)	store done. Thu May 30 12:48:27 CST 2024
